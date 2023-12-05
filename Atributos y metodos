@@ -4,5 +4,49 @@ public class Juego {
         String juego="GTA V";
         System.out.printf("El juego es: " + juego);
     }
+}
 
+EJERCICIO 2
+public class Futbol {
+    int numero;
+    String nombre;
+
+    public Futbol(int numero, String nombre){
+        this.numero = numero;
+        this.nombre = nombre;
+    }
+    public static void correr(){
+        System.out.println("Recorrido 200 metros");
+    }
+    public static void main(String[] args){
+        correr();
+    }
+}
+
+EJERCICIO 3
+public class Banco {
+    int cedula;
+    String nombre;
+
+    public Banco(int cedula, String nombre){
+        this.cedula = cedula;
+        this.nombre = nombre;
+    }
+
+    public void RegistrarDatos(){
+        System.out.println("DATOS PERSONALES");
+        System.out.println("------------------------------------");
+        System.out.println("Numero de cedula: " + cedula);
+        System.out.println("Nombre: " + nombre);
+    }
+
+    public static void CuentaBancaria(){
+        System.out.println("Cuenta registrada con exito");
+    }
+
+    public static void main(String[] args){
+        Banco datos = new Banco(1724569871, "Andres");
+        datos.RegistrarDatos();
+        CuentaBancaria();
+    }
 }
